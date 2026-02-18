@@ -11,7 +11,7 @@ volumes:
 
 services:
   goip-sms-server:
-    image: doanbaanh/goip-sms-server:latest
+    image: 9zenith/goip-sms-server:latest
     build:
       context: .
       dockerfile: .docker/Dockerfile
@@ -20,7 +20,7 @@ services:
       - "44444:80"
       - "44444:44444/udp"
     volumes:
-      - goip-sms-server-data:/var/lib/mysql
+      - /Container/mydata/goip-sms-server-data:/var/lib/mysql
     restart: unless-stopped
     logging: *default-logging
     ulimits:
