@@ -20,7 +20,7 @@ services:
       - "44444:80"
       - "44444:44444/udp"
     volumes:
-      - /Container/mydata/goip-sms-server-data:/var/lib/mysql
+      - /Container/mydata/goip-sms-server:/var/lib/mysql
     restart: unless-stopped
     logging: *default-logging
     ulimits:
