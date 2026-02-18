@@ -5,7 +5,7 @@ x-logging: &default-logging
     max-file: 5
 
 volumes:
-  goip-sms-server-data:
+  goip-sms-server:
 
 services:
   goip-sms-server:
