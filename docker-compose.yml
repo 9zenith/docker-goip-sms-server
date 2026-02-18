@@ -14,7 +14,7 @@ services:
     image: doanbaanh/goip-sms-server:latest
     build:
       context: .
-      dockerfile: .docker/Dockerfile
+      dockerfile: docker/Dockerfile
     container_name: goip-sms-server
     ports:
       - "44444:80"
